@@ -5,31 +5,15 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
-      {/* Language Toggle */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 flex justify-end">
-        <div className="flex items-center gap-2 text-sm">
-          <span className="font-medium text-gray-900">ES</span>
-          <span className="text-gray-400">|</span>
-          <Link href="/en" className="text-gray-500 hover:text-gray-900">EN</Link>
-        </div>
-      </div>
-
       {/* Hero */}
       <header className="relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
           <div className="text-center">
-            {/* Venezuelan flag colors accent */}
-            <div className="flex justify-center gap-1 mb-6">
-              <div className="w-12 h-1 bg-yellow-400 rounded-full"></div>
-              <div className="w-12 h-1 bg-blue-600 rounded-full"></div>
-              <div className="w-12 h-1 bg-red-600 rounded-full"></div>
-            </div>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
-              IA Para Venezuela
+              Construye con IA
             </h1>
-            <p className="mt-4 text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-600 font-semibold">
-              Empoderando con Inteligencia Artificial
+            <p className="mt-4 text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600 font-semibold">
+              Las herramientas que necesitas para salir adelante
             </p>
             <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
               Las herramientas para construir tu futuro ahora están disponibles gratis o casi gratis.
@@ -121,33 +105,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Para Venezolanos */}
+      {/* Por qué ahora */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="bg-blue-900 rounded-3xl p-8 md:p-12 text-white">
+        <div className="bg-gray-900 rounded-3xl p-8 md:p-12 text-white">
           <h2 className="text-2xl font-bold mb-4">
-            ¿Por qué esto importa para Venezuela?
+            El juego cambió
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <p className="text-blue-100 mb-4">
-                Tenemos talento de sobra. Lo que nos faltaba era acceso a las mismas herramientas que tienen en Silicon Valley.
+              <p className="text-gray-300 mb-4">
+                Las herramientas que antes solo tenían en Silicon Valley ahora están disponibles para cualquiera con internet.
               </p>
-              <p className="text-blue-100">
-                <strong className="text-white">Eso cambió.</strong> Ahora puedes construir lo que quieras desde tu casa, con una laptop y WiFi.
+              <p className="text-gray-300">
+                <strong className="text-white">No importa de dónde vengas.</strong> Lo que importa es lo que quieres construir.
               </p>
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">💰</span>
-                <span className="text-blue-100">Muchas herramientas son gratis o tienen planes accesibles</span>
+                <span className="text-gray-300">La mayoría de herramientas son gratis o muy accesibles</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-2xl">🌎</span>
-                <span className="text-blue-100">Puedes trabajar para clientes en cualquier parte del mundo</span>
+                <span className="text-gray-300">Puedes trabajar para clientes en cualquier parte del mundo</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-2xl">📱</span>
-                <span className="text-blue-100">Solo necesitas tu teléfono o laptop para empezar</span>
+                <span className="text-gray-300">Solo necesitas una laptop y conexión a internet</span>
               </div>
             </div>
           </div>
@@ -160,7 +144,7 @@ export default function Home() {
           Explora por Categoría
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Cada categoría tiene herramientas probadas con tips específicos para nuestra situación.
+          Herramientas probadas con tips prácticos para que empieces hoy.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((category) => (
@@ -197,7 +181,7 @@ export default function Home() {
           <div className="text-gray-500 text-sm">
             Hecho con{' '}
             <span className="text-red-500">❤️</span>
-            {' '}para Venezuela usando Claude Code
+            {' '}usando Claude Code
           </div>
           <div className="flex items-center gap-4">
             <span className="text-gray-400 text-sm">Diciembre 2025</span>

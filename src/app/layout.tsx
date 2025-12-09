@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "IA Para Venezuela - Empoderando con Inteligencia Artificial",
-  description: "Guía de herramientas de IA para venezolanos. Aprende a usar Claude, ChatGPT, Midjourney y más para construir tu futuro. Gratis.",
+  title: "Construye con IA - Las herramientas para salir adelante",
+  description: "Guía práctica de herramientas de IA. Aprende a usar Claude, ChatGPT, Midjourney y más para construir tu futuro. Gratis o casi gratis.",
 };
 
 export default function RootLayout({
