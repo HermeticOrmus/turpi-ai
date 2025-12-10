@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { tools, Tool } from '@/data/tools';
+import { tools, Tool, getContentForLevel } from '@/data/tools';
+import { useSkillLevel } from '@/contexts/SkillLevelContext';
 
 type Goal =
   | 'chat'
@@ -88,6 +89,7 @@ function getRecommendation(goal: Goal): Recommendation {
 
 export default function StartPage() {
   const [selectedGoal, setSelectedGoal] = useState<Goal | null>(null);
+  const { level } = useSkillLevel();
 
   const recommendation = selectedGoal ? getRecommendation(selectedGoal) : null;
 
@@ -166,7 +168,7 @@ export default function StartPage() {
                     {recommendation.primary.name}
                   </h3>
                   <p className="text-gray-600 mt-2">
-                    {recommendation.primary.tagline}
+                    {getContentForLevel(recommendation.primary.tagline, level)}
                   </p>
                 </div>
                 <Link
@@ -192,7 +194,7 @@ export default function StartPage() {
                       {recommendation.secondary.name}
                     </h3>
                     <p className="text-gray-600 mt-2">
-                      {recommendation.secondary.tagline}
+                      {getContentForLevel(recommendation.secondary.tagline, level)}
                     </p>
                   </div>
                   <Link

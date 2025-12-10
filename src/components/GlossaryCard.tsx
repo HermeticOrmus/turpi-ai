@@ -1,49 +1,16 @@
 'use client';
 
-import { CategoryInfo } from '@/data/tools';
 import { useSkillLevel } from '@/contexts/SkillLevelContext';
+import { glossary } from '@/data/glossary';
 import Link from 'next/link';
-import {
-  Brain,
-  Code2,
-  ImageIcon,
-  Cloud,
-  Database,
-  Zap,
-  Palette,
-  Globe,
-  Blocks,
-  Wrench,
-  GitBranch,
-  LucideIcon,
-} from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
-// Map category IDs to Lucide icons (monochrome, dynamically colorable)
-const categoryIconMap: Record<string, LucideIcon> = {
-  llm: Brain,
-  coding: Code2,
-  image: ImageIcon,
-  hosting: Cloud,
-  database: Database,
-  automation: Zap,
-  design: Palette,
-  languages: Globe,
-  frameworks: Blocks,
-  devtools: Wrench,
-  opensource: GitBranch,
-};
-
-interface CategoryCardProps {
-  category: CategoryInfo;
-  toolCount: number;
-}
-
-export function CategoryCard({ category, toolCount }: CategoryCardProps) {
+export function GlossaryCard() {
   const { colors } = useSkillLevel();
-  const IconComponent = categoryIconMap[category.id] || Brain;
+  const termCount = glossary.length;
 
   return (
-    <Link href={`/category/${category.id}`} className="group block">
+    <Link href="/glosario" className="group block">
       <article
         className="relative overflow-hidden rounded-2xl p-5 bg-stone-900 border border-stone-800 hover:border-stone-700 transition-all duration-200 hover:-translate-y-0.5"
       >
@@ -52,7 +19,7 @@ export function CategoryCard({ category, toolCount }: CategoryCardProps) {
           className="absolute top-0 right-0 -mt-6 -mr-6 opacity-5 group-hover:opacity-10 transition-opacity"
           aria-hidden="true"
         >
-          <IconComponent
+          <BookOpen
             className="w-28 h-28 transition-colors"
             strokeWidth={1}
             style={{ color: colors.hex }}
@@ -62,22 +29,22 @@ export function CategoryCard({ category, toolCount }: CategoryCardProps) {
         <div className="relative">
           {/* Main icon - colored by theme */}
           <div className="mb-3">
-            <IconComponent
+            <BookOpen
               className="w-8 h-8 transition-colors"
               strokeWidth={1.5}
               style={{ color: colors.hex }}
             />
           </div>
           <h3 className="text-lg font-bold mb-1 text-stone-100 transition-colors">
-            <span className="group-hover:hidden">{category.name}</span>
-            <span className="hidden group-hover:inline" style={{ color: colors.hex }}>{category.name}</span>
+            <span className="group-hover:hidden">Glosario</span>
+            <span className="hidden group-hover:inline" style={{ color: colors.hex }}>Glosario</span>
           </h3>
           <p className="text-stone-500 text-sm leading-snug mb-3 line-clamp-2">
-            {category.description}
+            Términos técnicos explicados para tu nivel
           </p>
           <div className="flex items-center justify-between">
             <span className="text-xs font-medium bg-stone-800 text-stone-400 px-2.5 py-1 rounded-full">
-              {toolCount} {toolCount === 1 ? 'herramienta' : 'herramientas'}
+              {termCount} términos
             </span>
             <span
               className="text-stone-600 group-hover:translate-x-0.5 transition-all"
