@@ -6,7 +6,24 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
+<p align="center">
+  <img src="https://ormus.solutions/mascot/chain_braces_to_swan.gif" alt="or" width="128" style="image-rendering: pixelated;" />
+</p>
+
+<h1 align="center">or</h1>
+
+<p align="center">
+  <em>🦜 Guía práctica de herramientas de IA. Directorio con 45+ tools explicadas en español, adaptadas a tu nivel de experiencia. Next.js 16 +    React 19. | AI tools directory for Spanish speakers.</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/HermeticOrmus/turpi-ai/stargazers"><img src="https://img.shields.io/github/stars/HermeticOrmus/turpi-ai?style=flat-square&color=aa8142" alt="Stars" /></a>
+  <a href="https://github.com/HermeticOrmus/turpi-ai/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HermeticOrmus/turpi-ai?style=flat-square&color=aa8142" alt="License" /></a>
+  <a href="https://github.com/HermeticOrmus/turpi-ai/commits"><img src="https://img.shields.io/github/last-commit/HermeticOrmus/turpi-ai?style=flat-square&color=aa8142" alt="Last Commit" /></a>
+  <img src="https://img.shields.io/badge/Claude_Code-aa8142?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code" />
+</p>
+
+---
 yarn dev
 # or
 pnpm dev
