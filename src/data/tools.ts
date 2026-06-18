@@ -357,6 +357,37 @@ export const tools: Tool[] = [
     },
     lastUpdated: '2025-12-09',
   },
+  {
+    id: 'roblox-gui-maker',
+    name: 'Roblox GUI Maker',
+    slug: 'roblox-gui-maker',
+    category: 'coding',
+    tagline: {
+      beginner: 'Crea interfaces de Roblox describiéndolas',
+      intermediate: 'Generador de GUI y Lua starter code para Roblox Studio',
+      advanced: 'Prompt-to-ScreenGui workflow para prototipar UI de Roblox con código Lua editable',
+    },
+    description: {
+      beginner: 'Roblox GUI Maker te ayuda a crear pantallas para juegos de Roblox sin empezar desde cero. Escribes qué interfaz quieres y recibes una estructura de GUI con código Lua inicial.',
+      intermediate: 'Herramienta web para prototipar interfaces tipo ScreenGui en Roblox Studio. Convierte prompts en layouts y Lua starter code que puedes revisar, adaptar y pegar en tu proyecto.',
+      advanced: 'Generador especializado para workflows de Roblox Studio: prompt-to-layout, componentes ScreenGui, y Lua starter code. Útil para acelerar wireframes jugables antes de pulir UX, estilos y lógica final.',
+    },
+    bestFor: ['Roblox Studio', 'Prototipos de UI', 'Lua starter code', 'Game dev'],
+    pricing: 'free',
+    pricingDetails: 'Gratis en navegador',
+    url: 'https://robloxguimaker.dev/',
+    turpiTake: {
+      beginner: 'Si quieres hacer una pantalla para tu juego de Roblox y no sabes por dónde empezar, te da una base rápida para experimentar.',
+      intermediate: 'Bueno para acelerar prototipos de menús, HUDs y pantallas. Igual revisa el Lua generado antes de usarlo en producción.',
+      advanced: 'No reemplaza arquitectura UI seria, pero ahorra tiempo en exploración y scaffolding de ScreenGui. Buen fit para iterar con diseñadores o solo devs Roblox.',
+    },
+    limitations: {
+      beginner: 'El código generado puede necesitar ajustes. Siempre pruébalo dentro de Roblox Studio antes de publicar tu juego.',
+      intermediate: 'Está enfocado en UI, no en lógica completa del juego. Prompts específicos producen mejores resultados que descripciones vagas.',
+      advanced: 'Requiere revisión manual de seguridad, estado, eventos y performance. No cubre sistemas complejos de UI state management por sí solo.',
+    },
+    lastUpdated: '2026-06-18',
+  },
 
   // Image Generation
   {
