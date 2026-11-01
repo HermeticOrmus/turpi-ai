@@ -1015,6 +1015,29 @@ export const tools: Tool[] = [
     lastUpdated: '2025-12-08',
   },
 
+  {
+    id: 'agent-qa',
+    name: 'agent-qa',
+    slug: 'agent-qa',
+    category: 'devtools',
+    tagline: 'Pruebas web y móviles con memoria y aprendizaje validado',
+    description: {
+      beginner: 'Describe qué quieres probar en tu app web, Android o iOS. agent-qa ejecuta los pasos y guarda resultados para revisarlos. Su memoria memidex conserva lo aprendido sobre tu app entre pruebas.',
+      intermediate: 'Pruebas de aplicaciones con instrucciones en lenguaje natural. memidex conserva hechos, precauciones y procedimientos entre ejecuciones; el aprendizaje se valida antes de reutilizarse.',
+      advanced: 'CLI y servidor MCP para pruebas web, Android e iOS. memidex mantiene conocimiento persistente y la mejora continua promueve aprendizajes con evidencia confirmada; no reescribe su propio código.',
+    },
+    bestFor: ['Pruebas web', 'Pruebas Android e iOS', 'Flujos de QA'],
+    pricing: 'free',
+    pricingDetails: 'Software gratis para usos permitidos por FSL-1.1-ALv2; restringe usos comerciales competidores. Modelos y servicios de dispositivos se pagan aparte.',
+    url: 'https://vostride.com',
+    limitations: {
+      beginner: 'Proyecto en etapa temprana. Requiere Node.js 24+, configurar un modelo y preparar el entorno de pruebas. Revisa los resultados y usa cuentas de prueba.',
+      intermediate: 'Proyecto en etapa temprana; requiere Node.js 24+ y un entorno web o móvil configurado. Revisa el proveedor del modelo y evita datos sensibles en capturas y grabaciones.',
+      advanced: 'Etapa temprana; Node.js 24+. Revisa los permisos del entorno y el tratamiento de datos del proveedor del modelo. Capturas, grabaciones e inicios de sesión guardados no se sanitizan automáticamente.',
+    },
+    lastUpdated: '2026-11-01',
+  },
+
   // Open Source
   {
     id: 'ollama',
